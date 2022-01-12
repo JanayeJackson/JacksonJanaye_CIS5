@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Lab1_incomplete
+PROJECTNAME=Lab1_Minimize_Fuel_Costs
 
 # Active Configuration
 DEFAULTCONF=Debug

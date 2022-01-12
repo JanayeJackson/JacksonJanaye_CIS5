@@ -74,23 +74,23 @@ int main(int argc, char** argv) {
     cout<<""<<endl;
     
     cout<<"The Cost of Gas Station 1"<<endl;
-    cout<<"Gas Cost per Gallon   = "<<cPerG1<<endl;
-    cout<<"Miles to Gas Station  = "<<mtGS1<<endl;
-    cout<<"Cost to Fill Up       = "<<cFUP1<<endl;
-    cout<<"Total Distance Driven = "<<dist1<<endl;
-    cout<<"Cost to drive to and\nfrom Gas Station      = "<<cDist1<<endl;
-    cout<<"Total Cost with Mileage\nto Gas Station        = "<<tCost1<<endl;
-    cout<<"Price Per Gallon Based on Mileage to Gas Station = "<<pStn1<<endl;
+    cout<<"Gas Cost per Gallon   = $"<<cPerG1<<endl;
+    cout<<"Miles to Gas Station  = "<<mtGS1<<" miles"<<endl;
+    cout<<"Cost to Fill Up       = $"<<cFUP1<<endl;
+    cout<<"Total Distance Driven = "<<dist1<<" miles"<<endl;
+    cout<<"Cost to drive to and\nfrom Gas Station      = $"<<cDist1<<endl;
+    cout<<"Total Cost with Mileage\nto Gas Station        = $"<<tCost1<<endl;
+    cout<<"Price Per Gallon Based on Mileage to Gas Station = $"<<pStn1<<endl;
     cout<<""<<endl;
     
-    cout<<"The Cost of Gas Station 1"<<endl;
-    cout<<"Gas Cost per Gallon   = "<<cPerG2<<endl;
-    cout<<"Miles to Gas Station  = "<<mtGS2<<endl;
-    cout<<"Cost to Fill Up       = "<<cFUP2<<endl;
-    cout<<"Total Distance Driven = "<<dist2<<endl;
-    cout<<"Cost to drive to and\nfrom Gas Station      = "<<cDist2<<endl;
-    cout<<"Total Cost with Mileage\nto Gas Station        = "<<tCost2<<endl;
-    cout<<"Price Per Gallon Based on Mileage to Gas Station = "<<pStn2<<endl;
+    cout<<"The Cost of Gas Station 2"<<endl;
+    cout<<"Gas Cost per Gallon   = $"<<cPerG2<<endl;
+    cout<<"Miles to Gas Station  = "<<mtGS2<<" miles"<<endl;
+    cout<<"Cost to Fill Up       = $"<<cFUP2<<endl;
+    cout<<"Total Distance Driven = "<<dist2<<" miles"<<endl;
+    cout<<"Cost to drive to and\nfrom Gas Station      = $"<<cDist2<<endl;
+    cout<<"Total Cost with Mileage\nto Gas Station        = $"<<tCost2<<endl;
+    cout<<"Price Per Gallon Based on Mileage to Gas Station = $"<<pStn2<<endl;
 
     //Exit the program
     return 0;

@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=lab1_incomplete
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/lab1_incomplete
+CND_ARTIFACT_NAME_Debug=lab1_minimize_fuel_costs
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/lab1_minimize_fuel_costs
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=lab1incomplete.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/lab1incomplete.tar
+CND_PACKAGE_NAME_Debug=lab1minimizefuelcosts.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/lab1minimizefuelcosts.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=lab1_incomplete
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/lab1_incomplete
+CND_ARTIFACT_NAME_Release=lab1_minimize_fuel_costs
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/lab1_minimize_fuel_costs
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=lab1incomplete.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/lab1incomplete.tar
+CND_PACKAGE_NAME_Release=lab1minimizefuelcosts.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/lab1minimizefuelcosts.tar
 #
 # include compiler specific variables
 #
