@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Janaye Jackson
  *
- * Created on February 2, 2022, 6:11 PM
+ * Created on February 2, 2022, 4:28 PM
  * Purpose: Clue V6
  */
 
@@ -85,15 +85,16 @@ int main(int argc, char** argv) {
     //Player selection
     do{
         //List of players
-        cout<<"Players List"<<endl;
-        cout<<"1 - "<<char1<<endl;
-        cout<<"2 - "<<char2<<endl;
-        cout<<"3 - "<<char3<<endl;
-        cout<<"4 - "<<char4<<endl;
-        cout<<"5 - "<<char5<<endl;
-        cout<<"6 - "<<char6<<endl;
-        cout<<"Which player would you like to play as?"<<endl;     //User choice
+        cout<<"   Players List"<<endl;
+        cout<<"1 - "<<setw(15)<<char1<<endl;
+        cout<<"2 - "<<setw(15)<<char2<<endl;
+        cout<<"3 - "<<setw(15)<<char3<<endl;
+        cout<<"4 - "<<setw(15)<<char4<<endl;
+        cout<<"5 - "<<setw(15)<<char5<<endl;
+        cout<<"6 - "<<setw(15)<<char6<<endl;
+        cout<<"\nWhich player would you like to play as?"<<endl;     //User choice
         cin>>choice;
+        cout<<endl;
     
         if(choice < 1 || choice > 6) //Input Validation 
         {
@@ -142,6 +143,7 @@ int main(int argc, char** argv) {
         //Character conformation
         cout<<"Is this the character you want? (y or n)"<<endl;
         cin>>ch;
+        
     }while(choice == 'n' or choice == 'N');
     
     //Case File - Who, with what, where
@@ -180,58 +182,72 @@ int main(int argc, char** argv) {
     
     //Game play
     do{
+        //output player location
+        cout<<"\nYou are at v-"<<vPos<<" h-"<<hPos<<endl;
+        
+        //Output room locations
+        cout<<"\nRoom                  | Vertical Location | Horizontal Location |"<<endl;
+        cout<<"Conservatory          | between  0 and  5 | between    0 and  5 |"<<endl;
+        cout<<"Billiard Room         | between  8 and 12 | between    0 and  5 |"<<endl;
+        cout<<"Library               | between 14 and 18 | between    0 and  6 |"<<endl;
+        cout<<"Study                 | between 21 and 24 | between    0 and  6 |"<<endl;
+        cout<<"Ballroom              | between  0 and  7 | between    8 and 15 |"<<endl;
+        cout<<"Hall                  | between 18 and 24 | between    9 and 14 |"<<endl;
+        cout<<"Kitchen               | between  0 and  6 | between   18 and 23 |"<<endl;
+        cout<<"Dining Room           | between  9 and 15 | between   16 and 23 |"<<endl;
+        cout<<"Lounge                | between 19 and 24 | between   17 and 23 |"<<endl;
+        
         //Player choice
-        cout<<"You are at v-"<<vPos<<" h-"<<hPos<<endl;
         cout<<"Would you like to make an accusation? (y or n)"<<endl;
         cin>>ch;
         
         //Provide accusation choices
         if(ch == 'y' || ch == 'Y'){
             //List players to choose from
-            cout<<"Players List"<<endl;
-            cout<<"1 - "<<char1<<endl;
-            cout<<"2 - "<<char2<<endl;
-            cout<<"3 - "<<char3<<endl;
-            cout<<"4 - "<<char4<<endl;
-            cout<<"5 - "<<char5<<endl;
-            cout<<"6 - "<<char6<<endl;
+            cout<<"\n   Players List"<<endl;
+            cout<<"1 - "<<setw(15)<<char1<<endl;
+            cout<<"2 - "<<setw(15)<<char2<<endl;
+            cout<<"3 - "<<setw(15)<<char3<<endl;
+            cout<<"4 - "<<setw(15)<<char4<<endl;
+            cout<<"5 - "<<setw(15)<<char5<<endl;
+            cout<<"6 - "<<setw(15)<<char6<<endl;
             
             //List weapons to choose from
-            cout<<"Weapons List"<<endl;
-            cout<<"1 - "<<wpon1<<endl;
-            cout<<"2 - "<<wpon2<<endl;
-            cout<<"3 - "<<wpon3<<endl;
-            cout<<"4 - "<<wpon4<<endl;
-            cout<<"5 - "<<wpon5<<endl;
-            cout<<"6 - "<<wpon6<<endl;
+            cout<<"\n   Weapons List"<<endl;
+            cout<<"1 - "<<setw(15)<<wpon1<<endl;
+            cout<<"2 - "<<setw(15)<<wpon2<<endl;
+            cout<<"3 - "<<setw(15)<<wpon3<<endl;
+            cout<<"4 - "<<setw(15)<<wpon4<<endl;
+            cout<<"5 - "<<setw(15)<<wpon5<<endl;
+            cout<<"6 - "<<setw(15)<<wpon6<<endl;
             
             //List rooms to choose from
-            cout<<"Rooms List"<<endl;
-            cout<<"1 - "<<room1<<endl;
-            cout<<"2 - "<<room2<<endl;
-            cout<<"3 - "<<room3<<endl;
-            cout<<"4 - "<<room4<<endl;
-            cout<<"5 - "<<room5<<endl;
-            cout<<"6 - "<<room6<<endl;
-            cout<<"7 - "<<room7<<endl;
-            cout<<"8 - "<<room8<<endl;
-            cout<<"9 - "<<room9<<endl;
+            cout<<"\n     Rooms List"<<endl;
+            cout<<"1 - "<<setw(15)<<room1<<endl;
+            cout<<"2 - "<<setw(15)<<room2<<endl;
+            cout<<"3 - "<<setw(15)<<room3<<endl;
+            cout<<"4 - "<<setw(15)<<room4<<endl;
+            cout<<"5 - "<<setw(15)<<room5<<endl;
+            cout<<"6 - "<<setw(15)<<room6<<endl;
+            cout<<"7 - "<<setw(15)<<room7<<endl;
+            cout<<"8 - "<<setw(15)<<room8<<endl;
+            cout<<"9 - "<<setw(15)<<room9<<endl;
             
             //User accusation 
-            cout<<"Choose a person, a weapon, and a room - (Ex. 1 1 1 would pick "<<char1<<" & "<<wpon1<<" & "<<room1<<endl;
+            cout<<"Choose a person, a weapon, and a room - (Ex. 1 1 1 would pick "<<char1<<" & "<<wpon1<<" & "<<room1<<")"1<<endl;
             cin>>ac1>>ac2>>ac3;
             if(ac1 == slct1 && ac2 == slct2 && ac3 == slct3)
             {
                 win = true;    //if all accusations are true player wins
             }
             else{
-                cout<<"Your accusation is incorrect"<<endl;
+                cout<<"\nYour accusation is incorrect"<<endl;
             }
         }
         //Else continue game
         else{
             //Dice rolling
-            cout<<"Rolling Dice..."<<endl;
+            cout<<"\nRolling Dice..."<<endl;
             dice = rand()%12+1;
             cout<<"You rolled a "<<dice<<endl;
             
@@ -243,8 +259,23 @@ int main(int argc, char** argv) {
             
             //User movement
             while(space < dice){
+                //Output player location
                 cout<<"Your position is v-"<<vPos<<", h-"<<hPos<<endl;
-                cout<<"You have "<<dice-space<<" spaces left to move."<<endl;
+                
+                //Output room locations
+                cout<<"\nRoom                  | Vertical Location | Horizontal Location |"<<endl;
+                cout<<"Conservatory          | between  0 and  5 | between    0 and  5 |"<<endl;
+                cout<<"Billiard Room         | between  8 and 12 | between    0 and  5 |"<<endl;
+                cout<<"Library               | between 14 and 18 | between    0 and  6 |"<<endl;
+                cout<<"Study                 | between 21 and 24 | between    0 and  6 |"<<endl;
+                cout<<"Ballroom              | between  0 and  7 | between    8 and 15 |"<<endl;
+                cout<<"Hall                  | between 18 and 24 | between    9 and 14 |"<<endl;
+                cout<<"Kitchen               | between  0 and  6 | between   18 and 23 |"<<endl;
+                cout<<"Dining Room           | between  9 and 15 | between   16 and 23 |"<<endl;
+                cout<<"Lounge                | between 19 and 24 | between   17 and 23 |"<<endl;
+        
+                //Player movement
+                cout<<"\nYou have "<<dice-space<<" spaces left to move."<<endl;
                 cout<<"Would you like to move up, down, left, right, or not at all? (u, d, l, r, n)"<<endl;
                 cin>>ch;
                 if(ch == 'u' || ch == 'U'){       //Moving up
@@ -331,29 +362,29 @@ int main(int argc, char** argv) {
                 
             
             if(inRoom == true){ //Player is in room
-                cout<<"You are in "<<pRoom<<endl;
+                cout<<"\nYou are in "<<pRoom<<endl;
                 //Does user know who, what, and where?
                 cout<<"Would you like to make an accusation?(y or n)"<<endl;
                 cin>>ch;
                 if(ch == 'y' || ch == 'Y')//Provide Accusation choices 
                 {
                     //List players to choose from
-                    cout<<"Players List"<<endl;
-                    cout<<"1 - "<<char1<<endl;
-                    cout<<"2 - "<<char2<<endl;
-                    cout<<"3 - "<<char3<<endl;
-                    cout<<"4 - "<<char4<<endl;
-                    cout<<"5 - "<<char5<<endl;
-                    cout<<"6 - "<<char6<<endl;
+                    cout<<"\n   Players List"<<endl;
+                    cout<<"1 - "<<setw(15)<<char1<<endl;
+                    cout<<"2 - "<<setw(15)<<char2<<endl;
+                    cout<<"3 - "<<setw(15)<<char3<<endl;
+                    cout<<"4 - "<<setw(15)<<char4<<endl;
+                    cout<<"5 - "<<setw(15)<<char5<<endl;
+                    cout<<"6 - "<<setw(15)<<char6<<endl;
             
                     //List weapons to choose from
-                    cout<<"Weapons List"<<endl;
-                    cout<<"1 - "<<wpon1<<endl;
-                    cout<<"2 - "<<wpon2<<endl;
-                    cout<<"3 - "<<wpon3<<endl;
-                    cout<<"4 - "<<wpon4<<endl;
-                    cout<<"5 - "<<wpon5<<endl;
-                    cout<<"6 - "<<wpon6<<endl;
+                    cout<<"\n   Weapons List"<<endl;
+                    cout<<"1 - "<<setw(15)<<wpon1<<endl;
+                    cout<<"2 - "<<setw(15)<<wpon2<<endl;
+                    cout<<"3 - "<<setw(15)<<wpon3<<endl;
+                    cout<<"4 - "<<setw(15)<<wpon4<<endl;
+                    cout<<"5 - "<<setw(15)<<wpon5<<endl;
+                    cout<<"6 - "<<setw(15)<<wpon6<<endl;
                     
                     //User accusation
                     cout<<"Choose a person and a weapon - (Ex. 1 1 would pick "<<char1<<" & "<<wpon1<<")"<<endl;
@@ -373,34 +404,34 @@ int main(int argc, char** argv) {
                     cin>>ch;
                     if(ch == 'y' || ch == 'Y'){  //Provide list of suspect
                         //List players to choose from
-                        cout<<"Players List"<<endl;
-                        cout<<"1 - "<<char1<<endl;
-                        cout<<"2 - "<<char2<<endl;
-                        cout<<"3 - "<<char3<<endl;
-                        cout<<"4 - "<<char4<<endl;
-                        cout<<"5 - "<<char5<<endl;
-                        cout<<"6 - "<<char6<<endl;
+                        cout<<"\n   Players List"<<endl;
+                        cout<<"1 - "<<setw(15)<<char1<<endl;
+                        cout<<"2 - "<<setw(15)<<char2<<endl;
+                        cout<<"3 - "<<setw(15)<<char3<<endl;
+                        cout<<"4 - "<<setw(15)<<char4<<endl;
+                        cout<<"5 - "<<setw(15)<<char5<<endl;
+                        cout<<"6 - "<<setw(15)<<char6<<endl;
             
                         //List weapons to choose from
-                        cout<<"Weapons List"<<endl;
-                        cout<<"7 - "<<wpon1<<endl;
-                        cout<<"8 - "<<wpon2<<endl;
-                        cout<<"9 - "<<wpon3<<endl;
-                        cout<<"10 - "<<wpon4<<endl;
-                        cout<<"11 - "<<wpon5<<endl;
-                        cout<<"12 - "<<wpon6<<endl;
+                        cout<<"\n   Weapons List"<<endl;
+                        cout<<"7 - "<<setw(15)<<wpon1<<endl;
+                        cout<<"8 - "<<setw(15)<<wpon2<<endl;
+                        cout<<"9 - "<<setw(15)<<wpon3<<endl;
+                        cout<<"10 - "<<setw(15)<<wpon4<<endl;
+                        cout<<"11 - "<<setw(15)<<wpon5<<endl;
+                        cout<<"12 - "<<setw(15)<<wpon6<<endl;
             
                         //List rooms to choose from
-                        cout<<"Rooms List"<<endl;
-                        cout<<"13 - "<<room1<<endl;
-                        cout<<"14 - "<<room2<<endl;
-                        cout<<"15 - "<<room3<<endl;
-                        cout<<"16 - "<<room4<<endl;
-                        cout<<"17 - "<<room5<<endl;
-                        cout<<"18 - "<<room6<<endl;
-                        cout<<"19 - "<<room7<<endl;
-                        cout<<"20 - "<<room8<<endl;
-                        cout<<"21 - "<<room9<<endl;
+                        cout<<"\n     Rooms List"<<endl;
+                        cout<<"13 - "<<setw(15)<<room1<<endl;
+                        cout<<"14 - "<<setw(15)<<room2<<endl;
+                        cout<<"15 - "<<setw(15)<<room3<<endl;
+                        cout<<"16 - "<<setw(15)<<room4<<endl;
+                        cout<<"17 - "<<setw(15)<<room5<<endl;
+                        cout<<"18 - "<<setw(15)<<room6<<endl;
+                        cout<<"19 - "<<setw(15)<<room7<<endl;
+                        cout<<"20 - "<<setw(15)<<room8<<endl;
+                        cout<<"21 - "<<setw(15)<<room9<<endl;
                         cout<<"Choose who or what you suspect - (Ex. 1 would pick "<<char1<<")"<<endl;
                         cin>>choice;
                     }
