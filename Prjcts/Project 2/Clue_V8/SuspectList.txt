@@ -1,0 +1,12 @@
+Miss Scarlet is not a suspect .*
+Professor Plum is not a suspect .*
+Mr. Green is not a suspect .*
+Mrs. White is the killer .*
+Rope is not the weapon used .*
+Lead Pipe is not the weapon used .*
+Knife is not the weapon used .*
+Wrench is not the weapon used .*
+Candlestick is the weapon used .*
+Conservatory is not where the murder happened .*
+Billiard Room is not where the murder happened .*
+The Library is where the murder happened .*
