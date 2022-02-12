@@ -620,7 +620,7 @@ void readIn(fstream &in, string &spect){
         if(spect == lEnd)
             cout<<endl;
         else
-    cout<<spect<<" ";
+        cout<<spect<<" ";
     }
 }
 
